@@ -13,17 +13,17 @@ while i <= numPurchases:
     i += 1   
 
 def add_tax(itemCosts_list, salesTax_value):
-    List = []
+    finalCosts = []
     for cost in itemCosts:
         finalCost = cost * (1 + salesTax_value)
-        List.append(finalCost)
-    return List
+        finalCosts.append(finalCost)
+    return finalCosts
 newList = add_tax(itemCosts, salesTax)
 
 dictionary = {}
 for j in range(numPurchases):
-    if customer in dictionary:
-        dictionary[customer] += newList[j]
+    if customer[j] in dictionary:
+        dictionary[customerNames[j] += newList[j]
     else:
         dictionary[customerNames[j]] = newList[j]
 print(dictionary)
