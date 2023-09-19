@@ -23,7 +23,7 @@ newList = add_tax(itemCosts, salesTax)
 dictionary = {}
 for j in range(numPurchases):
     if customer[j] in dictionary:
-        dictionary[customerNames[j] += newList[j]
+        dictionary[customerNames[j]] += newList[j]
     else:
         dictionary[customerNames[j]] = newList[j]
 print(dictionary)
